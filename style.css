@@ -2,32 +2,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* backdrop-filter: blur(1px); */
+
 }
 
 body {
-    /* margin: 1px 0 1px 0; */
+
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background-image:url("6.jpg"); */
-    background: linear-gradient(to top, #09203f 0%, #537895 100%);
-
+    background-image: url("5.jpg");
     background-size: cover;
-    background-position: right;
+    background-position: bottom;
 
 }
 
 .container {
     width: 420px;
     background: transparent;
-    backdrop-filter: blur(50px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
-    /* background-color:rgb(89,114,72); */
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 5px #00ccff, 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 40px #00ccff, 0 0 80px #00ccff;
+    /* background-color:rgb(89,114,72); 
+    */
+    color: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff6ec7, 0 0 70px #ff6ec7, 0 0 80px #ff6ec7, 0 0 100px #ff6ec7, 0 0 150px #ff6ec7;
+    ;
 
     /* border: 2px solid rgba(226, 39, 39, 0.2); */
-    color: #fff;
+    /* color: #fff; */
+    color: #00ccff;
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -42,7 +48,8 @@ body {
     width: 100%;
     height: 50px;
     /* background-color: salmon; */
-    margin: 30px 0;
+    margin: 15px 0;
+
 }
 
 .input-box input {
@@ -55,7 +62,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     font-size: 16px;
-    color: rgb(252, 252, 252);
+    color: #ff6ec7;
     padding: 20px 45px 20px 20px;
 }
 
@@ -111,13 +118,13 @@ body {
 
 .container .btn {
 
-    width: 45%;
+    width: 100%;
     height: 45px;
-    background-color: #fff;
+    background-color: #00ccff;
     border: none;
     outline: none;
-    border-radius: 30px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    color: #00ccff;
     cursor: pointer;
     font-size: 16px;
     color: #333;
@@ -140,14 +147,18 @@ body {
     font-weight: 600;
 
 }
+.checkbox span:hover{
+    text-decoration: underline;
+}
 
 .register-link p a:hover {
     text-decoration: underline;
 }
 
 .container .input-area {
-    margin-top: 10px;
+    /* margin-top: 3px; */
     background: transparent;
+
 
 
 }
@@ -190,7 +201,16 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-.container .btn:hover{
-    box-shadow: 2px 1px 10px  #fff;
+
+.container .btn:hover {
+    box-shadow: 2px 1px 10px #fff;
     transform: scale(1.05);
+}
+
+input::placeholder {
+    color: #00ccff !important;
+}
+
+textarea::placeholder {
+    color: #00ccff !important;
 }
